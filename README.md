@@ -47,4 +47,4 @@ methods like feature importance and coefficient analysis.
 
 
 Some Links:
-- [https://github.com/SebastianRestrepoA/EMG-pattern-recognition](https://github.com/SebastianRestrepoA/EMG-pattern-recognition)
+- [https://github.com/SebastianRestrepoA/EMG-pattern-recognition](https://github.com/SebastianRestrepoA/EMG-pattern-recognition): We have used these code snippets as an inspiration for our EDA.
