@@ -38,23 +38,23 @@ if __name__ == "__main__":
     
     # data.drop(columns=["Unnamed: 0"], inplace=True)
     feature_cols = [c for c in data.columns if "_" in c]
-    participants = list(range(1, 44))
+    sessions = list(range(1, 4))
     
     results = {}
     
-    WINDOW = 5
+    WINDOW = 1
 
-    for i in tqdm(range(len(participants)-WINDOW + 1)):
+    for i in tqdm(range(len(sessions)-WINDOW + 1)):
         
         # pdb.set_trace()
         # try:
-        train_parts = participants[:i] + participants[i+WINDOW+1:]
-        test_parts = participants[i:i+WINDOW]
-        # print(test_parts)
+        train_parts = sessions[:i] + sessions[i+WINDOW+1:]
+        test_parts = sessions[i:i+WINDOW]
+        print(test_parts)
         # X = data.loc[:, feature_cols].values
         # Y = (data.loc[:, 'gesture']-1).values
-        train_df = data[data['participant'].isin(train_parts)]
-        test_df = data[data['participant'].isin(test_parts)]
+        train_df = data[data['session'].isin(train_parts)]
+        test_df = data[data['session'].isin(test_parts)]
         print(len(test_df))
         x_train = train_df.loc[:, feature_cols].values
         y_train = (train_df.loc[:, 'gesture'] - 1).values
@@ -149,7 +149,7 @@ if __name__ == "__main__":
         results[" ".join(test_parts)] = metrics_dict
         
         
-    with open("part_test_5_v4.json", "w") as file:
+    with open("session_test.json", "w") as file:
         json.dump(results, file)
         
         
