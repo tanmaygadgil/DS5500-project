@@ -54,11 +54,11 @@ Data Source: https://physionet.org/content/grabmyo/1.0.0/
 
 References:
 
-He, Jiayuan, Dingguo Zhang, Xinjun Sheng, Shunchong Li, and Xiangyang Zhu. "Invariant surface EMG feature against varying contraction level for myoelectric control based on muscle coordination." IEEE journal of biomedical and health informatics 19, no. 3 (2014): 874-882.
+He, Jiayuan, et al. "Invariant surface EMG feature against varying contraction level for myoelectric control based on muscle coordination." IEEE journal of biomedical and health informatics 19.3 (2014): 874-882.
 
 Jiang, Ning, et al. "Gesture Recognition and Biometrics ElectroMyogram (GRABMyo)" (version 1.0.0). PhysioNet (2022), https://doi.org/10.13026/rtfc-np50.
 
-Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
-
 Pradhan, Ashirbad, Jiayuan He, and Ning Jiang. "Open access dataset for electromyography based multi-code biometric authentication." arXiv preprint arXiv:2201.01051 (2022).
+
+Goldberger, Ary L., et al. "PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals." circulation 101.23 (2000): e215-e220.
 
